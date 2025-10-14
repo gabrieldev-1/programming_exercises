@@ -1,5 +1,4 @@
-package resolutions;
-
+package src.list_one;
 
 public class Studant {
 

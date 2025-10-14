@@ -10,7 +10,7 @@ public class Studant {
     private double noteOne;
     private double noteTwo;
     private double workNote;
-
+    
     private static final double WEIGHT_TEST = 2.5;
     private static final double WEIGHT_WORK = 2.0;
     private static final double WEIGHT_SUM = (WEIGHT_TEST * 2) + WEIGHT_WORK;
@@ -39,7 +39,7 @@ public class Studant {
         if (currAvarege >= APPROVAL_RATING) {
             return 0.0;
         }
-        
+
         double requiredWeightedSum = APPROVAL_RATING * (WEIGHT_SUM + (WEIGHT_SUM + 2.5));
 
         double currentWeightedSum = currAvarege * WEIGHT_SUM;

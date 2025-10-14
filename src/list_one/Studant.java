@@ -1,5 +1,7 @@
 package src.list_one;
 
+// question 01
+
 public class Studant {
 
     private static int nextRegistration = 1000;

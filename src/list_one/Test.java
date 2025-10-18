@@ -1,6 +1,8 @@
 import java.util.HashMap;
 import java.util.Random;
 
+// question 04;
+
 class Template {
     private HashMap<Integer, Character> templateMap;
     private static final char[] ANWSERS = {'A', 'B', 'C', 'D', 'E'};

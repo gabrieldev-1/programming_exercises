@@ -1,10 +1,10 @@
 // question 05;
 
-public class Array {
+public class SortableArray {
     private String[] array;
     private int lastElementIndex;
 
-    public Array(int length) {
+    public SortableArray(int length) {
         this.array = new String[length];
         this.lastElementIndex = -1;
     }
@@ -43,15 +43,7 @@ public class Array {
     }
 
     public static void main(String[] args) {
-        Array myArray = new Array(5);
-
-        myArray.insert("Banana");
-        myArray.insert("Maca");
-        myArray.insert("Maracuja");
-        myArray.insert("Goiaba");
-        myArray.insert("Pera");
-        myArray.insert("Abacaxi");
-
+        SortableArray myArray = new SortableArray(5);
         
         for(int i = 0; i < myArray.size(); i++) {
             System.out.println(myArray.get(i));

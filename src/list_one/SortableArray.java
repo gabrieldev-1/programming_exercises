@@ -1,5 +1,7 @@
 // question 05;
 
+import java.util.Arrays;
+
 public class SortableArray {
     private String[] array;
     private int lastElementIndex;
@@ -23,11 +25,18 @@ public class SortableArray {
     public void insert(String newStr) {
         if(lastElementIndex == array.length - 1) {
             expendArray();
-     
         } 
 
         lastElementIndex++;
         array[lastElementIndex] = newStr;
+
+        if (this.count() > 1) {
+            Arrays.sort(array, 0, this.count());
+        }
+    }
+
+    private int count() {
+        return lastElementIndex + 1;
     }
 
     public String get(int index) {
@@ -44,6 +53,11 @@ public class SortableArray {
 
     public static void main(String[] args) {
         SortableArray myArray = new SortableArray(5);
+        
+        myArray.insert("Gabriel");
+        myArray.insert("Amelia");
+        myArray.insert("Bruna");
+        myArray.insert("Ronaldo");
         
         for(int i = 0; i < myArray.size(); i++) {
             System.out.println(myArray.get(i));
